@@ -26,7 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'haml', '~>4.0.7'
 gem 'simple_form','~>3.2.0'
 gem 'devise','~>3.5.2'
-
+gem 'nokogiri','~>1.6.4'
 # Use ActiveModel has_secure_password
 gem 'bcrypt'
 
@@ -47,5 +47,6 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
 end
 
