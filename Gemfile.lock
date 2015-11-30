@@ -189,7 +189,7 @@ DEPENDENCIES
   haml (~> 4.0.7)
   jbuilder (~> 2.0)
   jquery-rails
-  nokogiri (~> 1.6.4)
+  nokogiri (~> 1.6.7)
   rails (= 4.2.5)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
