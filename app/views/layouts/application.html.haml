@@ -1,0 +1,29 @@
+!!!
+%html
+%head
+  %title Roshambo's Users Forum
+  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+  %link{ rel:'stylesheet', href:'https://fonts.googleapis.com/css?family=Lobster|Chewy|Permanent+Marker|Lato', type:'text/css'}
+  %link{ rel:'stylesheet', herf:'https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css', type:'text/css'}
+  = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  = csrf_meta_tags
+%body
+  %header.main_header.clearfix
+    .wrapper
+      #logo
+        %p= link_to "Roshambo's Users Forum", root_path
+      #buttons
+        -if user_signed_in?
+          = link_to "New Post", new_post_path
+          = link_to "Sign Out", destroy_user_session_path, method: "DELETE"
+        -else
+          = link_to "Sign Up", new_user_registration_path
+          = link_to "Sign In", new_user_session_path
+
+
+  .wrapper
+    %p.notice=notice
+    %p.alert=alert
+
+  .wrapper
+    = yield
