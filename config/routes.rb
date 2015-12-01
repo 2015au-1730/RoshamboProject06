@@ -4,5 +4,6 @@ Rails.application.routes.draw do
     resources :comments
   end
   get 'tool_kit' => 'tool_kit#index'
+  get 'list' => 'pages#index'
   root 'pages#home'
 end
