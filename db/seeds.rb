@@ -5,4 +5,4 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-l1 = List.create(description: "XXX", link:"www.google.com")
+l1 = List.create([{description: "XXX"}, {link:"www.google.com"}])
