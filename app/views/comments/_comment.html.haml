@@ -1,2 +1,20 @@
 .comment
+
   %p= comment.comment
+  %p.date
+    Published at
+    = time_ago_in_words(comment.created_at)
+    ago
+    =comment.created_at
+    By
+    =comment.user.email
+    - if time_ago_in_words(comment.updated_at)!= time_ago_in_words(comment.created_at)
+      %p.date
+        Updated
+        =time_ago_in_words(comment.updated_at)
+        at
+        =comment.updated_at
+  - if current_user==comment.user
+    = link_to "Edit", edit_post_comment_path(comment.post,comment)
+    = link_to "Delete Reply", [comment.post, comment], method: :delete, data: {confrim: "Are you sure?"}
+

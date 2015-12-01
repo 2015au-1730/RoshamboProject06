@@ -9,3 +9,8 @@
         =post.created_at
         By
         =post.user.email
+        - if  time_ago_in_words(post.updated_at)!= time_ago_in_words(post.created_at)
+          Updated
+          =time_ago_in_words(post.updated_at)
+          at
+          =post.updated_at
