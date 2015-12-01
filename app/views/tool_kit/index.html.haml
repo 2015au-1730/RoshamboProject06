@@ -1,0 +1,15 @@
+%h2 BMI Calculator
+%form{:name => "bmiForm"}
+  Your Weight(kg):
+  %input{:name => "weight", :size => "10", :type => "text"}
+  %br
+  Your Height(cm):
+  %input{:name => "height", :size => "10", :type => "text"}
+  %br
+  %input{:onClick => "calculateBmi()", :type => "button", :value => "Calculate BMI"}
+  %br
+  Your BMI:
+  %input{:name => "bmi", :size => "10", :type => "text"}
+  This Means:
+  %input{:name => "meaning", :size => "25", :type => "text"}
+  %input{:type => "reset", :value => "Reset"}
