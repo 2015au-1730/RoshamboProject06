@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   end
   get 'tool_kit' => 'tool_kit#index'
   get 'list' => 'pages#index'
+  get 'forum'=>'posts#index'
   root 'pages#home'
 end

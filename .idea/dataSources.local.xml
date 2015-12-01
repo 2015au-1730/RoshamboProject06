@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="Rails RoshamboProject06: development" uuid="391a9620-8945-421d-bc35-1f5e7e0e30a2" />
+    <data-source name="Rails RoshamboProject06: development" uuid="391a9620-8945-421d-bc35-1f5e7e0e30a2">
+      <secret-storage>memory</secret-storage>
+    </data-source>
   </component>
 </project>
