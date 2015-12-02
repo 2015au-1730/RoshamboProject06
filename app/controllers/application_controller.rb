@@ -23,4 +23,14 @@ class ApplicationController < ActionController::Base
   end
   ####
 
+  #### Route upon signing in/signing up
+  def after_sign_in_path_for(resource)
+    '/dashboard' # or :prefix_to_your_route
+  end
+
+  def after_sign_up_path_for(resource)
+    '/dashboard' # Or :prefix_to_your_route
+  end
+  ####
+
 end
