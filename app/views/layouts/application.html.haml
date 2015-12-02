@@ -16,7 +16,9 @@
       #logo
         %p= link_to "Roshambo's Health Care", root_path
       #buttons
-        = link_to "Forum", posts_path
+        -if user_signed_in?
+          =link_to "Dashboard", dashboard_path
+        =link_to "Forum", posts_path
         =link_to "Hot deals", list_path
         =link_to "Tool Kit", tool_kit_path
         -if user_signed_in?
