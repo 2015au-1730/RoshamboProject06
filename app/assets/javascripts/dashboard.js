@@ -23,4 +23,4 @@ function show(id) {
 }
 
 
-$("#inboxCon").html("=escape_javascript(render partial: 'show_inbox')");
+//$("#inboxCon").html("=escape_javascript(render partial: 'show_inbox')");
