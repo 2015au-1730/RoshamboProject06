@@ -3,7 +3,9 @@
   <table border="0">
     <% @list.each do |l| %>
         <tr>
-          <th><%= l.cost %></th>
+          <th style="text-align: left;"><%= l.cost %></th>
+          <th/>
+          <th/>
           <th><a href="<%= l.link %>"><%= l.description %></a></th>
           <th style="display:none;"><%= l.category %></th>
         </tr>
