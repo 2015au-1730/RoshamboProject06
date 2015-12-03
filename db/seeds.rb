@@ -5,6 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-List.create(description: "XXX", cost: 3.9, link:"https://www.google.com", category:"head")
-List.create(description: "YYY", cost: 233, link:"https://www.google.com", category:"feet")
-List.create(description: "YYY", cost: 1, link:"https://www.google.com", category:"feet")
+
+
+l1 = List.create(description: "Leg", image: "legs.jpg")
+Item.create(description: "大保健1", image: "legs.jpg",link: "https://google.com", list_id: l1.id)
+Item.create(description: "大保健2", image: "legs.jpg",link: "https://google.com", list_id: l1.id)
+l2 = List.create(description: "Hand", image: "hands.jpg")
+l3 = List.create(description: "Back", image: "back.jpg")

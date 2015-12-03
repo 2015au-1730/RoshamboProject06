@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   get 'list' => 'pages#index'
   get 'forum'=>'posts#index'
   get 'dashboard' => 'dashboard#index'
+  get 'list/:id' => 'pages#show', as: :item
   root 'pages#home'
 end
