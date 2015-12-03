@@ -1,13 +1,16 @@
 <div align="center">
   <h2>Editor's selection for you!</h2>
   <table border="0">
+    <tr style="text-align: center;">
+      <td><strong>Price</strong></td>
+      <td><strong>Description</strong></td>
+      <td><strong>Category</strong></td>
+    </tr>
     <% @list.each do |l| %>
         <tr>
-          <th style="text-align: left;"><%= l.cost %></th>
-          <th/>
-          <th/>
-          <th><a href="<%= l.link %>"><%= l.description %></a></th>
-          <th style="display:none;"><%= l.category %></th>
+          <td style="text-align: left;">$<span style="display:inline-block; width:4px;"></span><%= l.cost %></td>
+          <td><a href="<%= l.link %>"><span style="display:inline-block; width:10px;"></span><%= l.description %></a></td>
+          <td><%= l.category %></td>
         </tr>
     <% end %>
   </table>
