@@ -18,7 +18,7 @@ body {
     background: #cceeff;
 }
 .wrapper {
-     width: 60%;
+     width: 95%;
      max-width: 1140px;
      margin: 0 auto;
  }
@@ -55,7 +55,7 @@ body {
 }
 
 #buttons {
-     float: right;
+    float: right;
  }
 #buttons > a {
     background: #3ea9de;

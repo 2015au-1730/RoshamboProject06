@@ -3,9 +3,12 @@
 %head
   %title Roshambo's Health Care Forum
   = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+  = stylesheet_link_tag    'dashboard',   media: 'all'
   %link{ rel:'stylesheet', href:'https://fonts.googleapis.com/css?family=Lobster|Chewy|Permanent+Marker|Lato', type:'text/css'}
   %link{ rel:'stylesheet', herf:'https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css', type:'text/css'}
+
   = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  = javascript_include_tag 'dashboard'
   = csrf_meta_tags
   = javascript_include_tag :defaults,'tool_kit'
   %script{:async => "", :defer => "defer", :src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyDZaGH2wDtOAEfAtcuPtD0MhSA0tNL_r-8&signed_in=true&libraries=places&callback=initMap"}
@@ -31,8 +34,9 @@
   %footer.main_footer.clearfix
     .wrapper
       %p
-        All rights reserved by
-        %a{:href => "https://github.com/2015au-1730/RoshamboProject06.git"} Roshambo
+        %center
+          All rights reserved by
+          %a{:href => "https://github.com/2015au-1730/RoshamboProject06.git"} Roshambo
 
   .wrapper
     %p.notice=notice

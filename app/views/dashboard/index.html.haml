@@ -1,2 +1,25 @@
 %html
-  %h1 Hello, #{current_user.first_name.to_s.capitalize}!
+  %div.UserDisp
+    .header
+      .profile_photo_img
+        =image_tag 'profilePic.png', alt: 'Profile Picture', size: '142x142';
+      .header_content
+        .greeting #{current_user.first_name.to_s.capitalize} #{current_user.last_name.to_s.capitalize}
+        .profileDesc
+          #age add age
+        .profileDesc
+          #location add location
+
+  .top_bar_container
+    %ul
+      %li
+        %a{href: '#'} Inbox
+      %li
+        %a{href: '#'} Info
+      %li
+        %a{href: '#'} Stats
+      %li
+        %a{href: '#'} Settings
+
+  %div.dashboard_content
+
