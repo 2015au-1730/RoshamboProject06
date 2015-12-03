@@ -1,3 +1,112 @@
 // Place all the styles related to the Dashboard controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+//  Define global variables //
+$accent1: #34495e;
+$accent2: #2c3e50;
+$text2: #95a5a6;
+
+//  User display section  //
+
+.UserDisp {
+  position: relative;
+  float: left;
+  font-size: 15px;
+  line-height: 1.4;
+  width: 100%;
+
+  .header {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0px 0px 16px 0px;
+    padding: 0px 0px 16px 172px;
+    border-bottom: 2px solid $accent1;
+
+    .header_content {
+      position: relative;
+      min-height: 158px;
+      margin: 8px 0px 4px;
+    }
+
+    .profile_photo_img {
+      display: block;
+      width: 142px;
+      height: 142px;
+      border: 1px solid #E2E2E2;
+      box-sizing: border-box;
+      border-radius: 50%;
+      top: 0px;
+      left: 0px;
+      position: absolute;
+    }
+
+  }
+}
+
+//  User info text  //
+.ProfileDesc {
+    margin: 8px 0px 4px;
+}
+
+//  Content nav bar section  //
+
+nav.top-bar-container {
+  top: 0;
+  left: 0;
+  right: 0;
+
+  ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    li {
+      list-style: none;
+      width: 25%;
+      background-color: $accent1;
+      border-right: 2px solid $accent2;
+      box-sizing: border-box;
+      float: left;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      a {
+        width: 100%;
+        color: white;
+        display: block;
+        padding: 1.875em 0;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+  }
+
+  .menu-items {
+    clear: both;
+    padding: 1em 3em;
+
+    h4 {
+      a {
+        color: $text2;
+        text-decoration: none;
+        &:hover {
+          color: $accent1;
+          transition: 1s;
+        }
+      }
+
+      &.menu {
+        float: left;
+      }
+
+      &.logo {
+        float: right;
+      }
+    }
+  }
+}

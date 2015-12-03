@@ -1,2 +1,28 @@
 %html
-  %h1 Hello, #{current_user.first_name.to_s.capitalize}!
+  %center
+    %h1 Hello, #{current_user.first_name.to_s.capitalize}!
+
+  %div
+    .UserDisp
+      .header
+        .profile_photo_img
+          =image_tag 'profilePic.png', alt: 'Profile Picture', size: '142x142';
+        .header_content
+          .profiledesc add age
+          .profileDesc add location
+
+  %nav.top-bar-container
+    %ul
+      %li
+        %a{href: '#'} Inbox
+      %li
+        %a{href: '#'} Info
+      %li
+        %a{href: '#'} Stats
+      %li
+        %a{href: '#'} Settings
+    .menu-items
+      %h4.menu
+        %a{href: '#'} MENU
+      %h4.logo
+        %a{href: '#'} Company Name

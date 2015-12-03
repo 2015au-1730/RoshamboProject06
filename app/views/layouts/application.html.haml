@@ -3,8 +3,10 @@
 %head
   %title Roshambo's Health Care Forum
   = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+  = stylesheet_link_tag    'dashboard',   media: 'all'
   %link{ rel:'stylesheet', href:'https://fonts.googleapis.com/css?family=Lobster|Chewy|Permanent+Marker|Lato', type:'text/css'}
   %link{ rel:'stylesheet', herf:'https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css', type:'text/css'}
+
   = javascript_include_tag 'application', 'data-turbolinks-track' => true
   = csrf_meta_tags
   = javascript_include_tag :defaults,'tool_kit'
