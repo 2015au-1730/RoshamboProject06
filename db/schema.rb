@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151201215652) do
+ActiveRecord::Schema.define(version: 20151202061819) do
 
   create_table "comments", force: :cascade do |t|
     t.text     "comment"
@@ -23,6 +23,18 @@ ActiveRecord::Schema.define(version: 20151201215652) do
 
   add_index "comments", ["post_id"], name: "index_comments_on_post_id"
   add_index "comments", ["user_id"], name: "index_comments_on_user_id"
+
+  create_table "dashboards", force: :cascade do |t|
+    t.integer  "post_id"
+    t.integer  "comment_id"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "dashboards", ["comment_id"], name: "index_dashboards_on_comment_id"
+  add_index "dashboards", ["post_id"], name: "index_dashboards_on_post_id"
+  add_index "dashboards", ["user_id"], name: "index_dashboards_on_user_id"
 
   create_table "lists", force: :cascade do |t|
     t.text     "description"
@@ -41,7 +53,13 @@ ActiveRecord::Schema.define(version: 20151201215652) do
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
+    t.string   "first_name",             default: "", null: false
+    t.string   "last_name",              default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
+    t.string   "birthDay",               default: "", null: false
+    t.string   "birthMonth",             default: "", null: false
+    t.string   "birthYear",              default: "", null: false
+    t.string   "gender",                 default: "", null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -54,7 +72,13 @@ ActiveRecord::Schema.define(version: 20151201215652) do
     t.datetime "updated_at",                          null: false
   end
 
+  add_index "users", ["birthDay"], name: "index_users_on_birthDay"
+  add_index "users", ["birthMonth"], name: "index_users_on_birthMonth"
+  add_index "users", ["birthYear"], name: "index_users_on_birthYear"
   add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["first_name"], name: "index_users_on_first_name"
+  add_index "users", ["gender"], name: "index_users_on_gender"
+  add_index "users", ["last_name"], name: "index_users_on_last_name"
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
 end
