@@ -1,5 +1,5 @@
 #README
-####Name of project: Javascript Calculator
+####Name of project: Roshambo Health Care Forum
 ####Version: 1.0
 ####Authors: Roshambo [Cameron Lloyd, Anna Baker, Xuanlin Yang, Lihe Zhang]
 ----------------------------------------------------------------------------
@@ -33,7 +33,7 @@ Enter 'Calculate BMI' to view your results.
 
 Q&A Forum:
 To ask a question, click "New Post"
-To view all posted questions, click "Forum" on the navbar on the homescreen.
+To view all posted questions, click "Forum" on the navbar on the homescreen.  After user logged in, user can create new a post and comment on posts. Author can edit and delete his/her own posts and comments. 
 
 Hot Deals:
 Filter health-related items/procedures based on the area of the body.  It is categrozied by body parts, legs, hands, back.  One could click into each category to view a list of corresponding selected producst with link to external sellers.
