@@ -1,0 +1,50 @@
+#README
+####Name of project: Javascript Calculator
+####Version: 1.0
+####Authors: Roshambo [Cameron Lloyd, Anna Baker, Xuanlin Yang, Lihe Zhang]
+----------------------------------------------------------------------------
+
+##How to run:
+To Run The Website:
+Navigate to the project folder
+1. run: bundle install
+2. run: rake db:seed
+3. run: rake db:migrate
+4. run: rails server
+
+
+## This application is intended to be used as a "Quora for health-related issues."
+Features include:
+- A Dashboard
+- A Q&A Forum
+- Toolkit (BMI Calculator)
+- Auto-location to search for nearby doctors
+- Hot Deals
+
+Dashboard:
+Provides a view to access application features.  Only available after logged in.
+
+Provider Locator:
+Will auto-locate you to find providers near you.
+
+Toolkit (BMI Calculator):
+To use, enter your weight in kg and height in cm. 
+Enter 'Calculate BMI' to view your results.
+
+Q&A Forum:
+To ask a question, click "New Post"
+To view all posted questions, click "Forum" on the navbar on the homescreen.
+
+Hot Deals:
+Filter health-related items/procedures based on the area of the body.  It is categrozied by body parts, legs, hands, back.  One could click into each category to view a list of corresponding selected producst with link to external sellers.
+
+Footer:
+We could be reached out thorugh the git hub homepage, the link to which is embeded in the footer.
+
+----------------------------------------------------------------------------
+Licensing:
+Open source program
+---------------------
+Contacts:
+If you want to be informed about the new code release, bug fixes, security fixes, general newsa and information about GameOfSet,
+subscribe to mailing list by email yang.400@osu.edu
