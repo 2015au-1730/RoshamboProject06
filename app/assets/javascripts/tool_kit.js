@@ -15,6 +15,6 @@
             }
         }
         else{
-            alert("Please Fill in everything correctly")
+            alert("ERROR: Please Fill in everything correctly.")
         }
  }
