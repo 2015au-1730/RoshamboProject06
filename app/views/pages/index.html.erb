@@ -1,0 +1,10 @@
+%div{:align => "center"}
+  %h2 Editor's selection for you!
+  %table{:border => "0"}
+    - @list.each do |l|
+      %tr
+        %th
+          - l.price
+        %th
+          %a{:href => "<haml_silent> l.link </haml_silent>"}
+            - l.description
