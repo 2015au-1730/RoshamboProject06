@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151202061819) do
+ActiveRecord::Schema.define(version: 20151201215652) do
 
   create_table "comments", force: :cascade do |t|
     t.text     "comment"
@@ -24,21 +24,11 @@ ActiveRecord::Schema.define(version: 20151202061819) do
   add_index "comments", ["post_id"], name: "index_comments_on_post_id"
   add_index "comments", ["user_id"], name: "index_comments_on_user_id"
 
-  create_table "dashboards", force: :cascade do |t|
-    t.integer  "post_id"
-    t.integer  "comment_id"
-    t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_index "dashboards", ["comment_id"], name: "index_dashboards_on_comment_id"
-  add_index "dashboards", ["post_id"], name: "index_dashboards_on_post_id"
-  add_index "dashboards", ["user_id"], name: "index_dashboards_on_user_id"
-
   create_table "lists", force: :cascade do |t|
     t.text     "description"
+    t.integer  "cost"
     t.text     "link"
+    t.text     "category"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
