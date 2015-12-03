@@ -24,3 +24,14 @@ Provides a view to access application features.
 
 Provider Locator:
 Will auto-locate you to find providers near you.
+
+Toolkit (BMI Calculator):
+To use, enter your weight in kg and height in cm. 
+Enter 'Calculate BMI' to view your results.
+
+Q&A Forum:
+To ask a question, click "New Post"
+To view all posted questions, click "Forum" on the navbar on the homescreen.
+
+Hot Deals:
+Filter health-related items/procedures based on the area of the body.
