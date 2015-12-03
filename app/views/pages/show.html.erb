@@ -1,0 +1,13 @@
+<div align="center">
+  <h2>Hot deals for <%= @list.description %></h2>
+  <table border="1">
+    <tr style="text-align: center;">
+    </tr>
+    <% @items.each do |l| %>
+        <tr>
+          <td><%= image_tag l.image, size: "100"%></td>
+          <td><a href=<%= l.link%>><%= l.description %></a></td>
+        </tr>
+    <% end %>
+  </table>
+</div>
