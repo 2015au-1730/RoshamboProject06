@@ -15,11 +15,14 @@
       %li
         %a{href: '#'} Inbox
       %li
-        %a{href: '#'} Info
+        %a{href: '#'} Appointments
       %li
-        %a{href: '#'} Stats
+        %a{href: '#'} Lists
       %li
-        %a{href: '#'} Settings
+        %a{href: '#'} Metrics
 
-  %div.dashboard_content
+  %div.dashboard_content{:id => "container"}
+    %div{:id=>"inboxCon"}
+      =render 'inbox'
+
 

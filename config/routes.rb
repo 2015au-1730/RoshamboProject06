@@ -3,9 +3,11 @@ Rails.application.routes.draw do
   resources :posts do
     resources :comments
   end
+
   get 'tool_kit' => 'tool_kit#index'
   get 'list' => 'pages#index'
   get 'forum'=>'posts#index'
   get 'dashboard' => 'dashboard#index'
+  get '/dashboard/inbox' => 'dashboard#show_inbox'
   root 'pages#home'
 end
