@@ -12,7 +12,3 @@ rails server
 
 ### This application is intended to be used as a Quora for health-related issues.
 
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
