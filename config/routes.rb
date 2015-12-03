@@ -9,5 +9,6 @@ Rails.application.routes.draw do
   get 'forum'=>'posts#index'
   get 'dashboard' => 'dashboard#index'
   get '/dashboard/inbox' => 'dashboard#show_inbox'
+  get 'list/:id' => 'pages#show', as: :item
   root 'pages#home'
 end

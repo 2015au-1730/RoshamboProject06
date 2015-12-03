@@ -1,12 +1,12 @@
 <div align="center">
-  <h2>Editor's selection for you!</h2>
+  <h2>Hot deals for <%= @list.description %></h2>
   <table border="1">
     <tr style="text-align: center;">
     </tr>
-    <% @list.each do |l| %>
+    <% @items.each do |l| %>
         <tr>
           <td><%= image_tag l.image, size: "100"%></td>
-          <td><%= link_to l.description, item_path(l) %></td>
+          <td><a href=<%= l.link%>><%= l.description %></a></td>
         </tr>
     <% end %>
   </table>
