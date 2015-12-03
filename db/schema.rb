@@ -38,7 +38,9 @@ ActiveRecord::Schema.define(version: 20151202061819) do
 
   create_table "lists", force: :cascade do |t|
     t.text     "description"
+    t.text     "cost"
     t.text     "link"
+    t.text     "category"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

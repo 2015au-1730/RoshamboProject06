@@ -1,10 +1,12 @@
-%div{:align => "center"}
-  %h2 Editor's selection for you!
-  %table{:border => "0"}
-    - @list.each do |l|
-      %tr
-        %th
-          - l.price
-        %th
-          %a{:href => "<haml_silent> l.link </haml_silent>"}
-            - l.description
+<div align="center">
+  <h2>Editor's selection for you!</h2>
+  <table border="0">
+    <% @list.each do |l| %>
+        <tr>
+          <th><%= l.cost %></th>
+          <th><a href="<%= l.link %>"><%= l.description %></a></th>
+          <th style="display:none;"><%= l.category %></th>
+        </tr>
+    <% end %>
+  </table>
+</div>

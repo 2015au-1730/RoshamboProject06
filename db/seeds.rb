@@ -5,4 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-l1 = List.create([{description: "XXX"}, {link:"www.google.com"}])
+List.create(description: "XXX", cost:"$3.9", link:"https://www.google.com", category:"head")
+List.create(description: "YYY", cost:"$233.9", link:"https://www.google.com", category:"feet")
